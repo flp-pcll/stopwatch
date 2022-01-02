@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import GlobalStyle from "./assets/styles/GlobalStyles";
+import Wrapper from "./components/Layout/Wrapper";
+import TimerDataControl from "./components/TimerData";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+        <React.Fragment>
+            <GlobalStyle />
+            <Wrapper>
+                <TimerDataControl>
+
+                </TimerDataControl>
+            </Wrapper>
+        </React.Fragment>
+    );
+};
 
 export default App;
