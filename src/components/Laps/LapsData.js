@@ -6,11 +6,12 @@ const LapsRow = styled.tr`
 
 
 function LapsData(props) {
+    console.log('no LapsData:', props.lapItem);
     return(
-        <LapsRow id={props.lapItem.id}>
-            <td name="numero da volta"> {props.lapItem.id} </td>
+        <LapsRow id={props.id}>
+            <td name="numero da volta"> {String(props.id + 1).padStart(2, "0")} </td>
             <td name="tempo da volta"> {props.lapItem.lapTotalTime}</td>
-            <td name="tempo total"> {props.lapItem.timerTotalTime} </td>
+            <td name="tempo total"> <span>{String(props.lapItem.timerTotalTime.minutes).padStart(2, "0")}</span>:<span>{String(props.lapItem.timerTotalTime.seconds).padStart(2, "0")}</span>.<span>{String(props.lapItem.timerTotalTime.centiseconds).padStart(2, "0")}</span></td>
         </LapsRow>
     );
 };

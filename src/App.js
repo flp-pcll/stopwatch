@@ -9,7 +9,6 @@ function App() {
             <GlobalStyle />
             <Wrapper>
                 <TimerDataControl>
-
                 </TimerDataControl>
             </Wrapper>
         </React.Fragment>

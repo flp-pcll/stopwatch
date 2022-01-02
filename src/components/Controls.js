@@ -6,6 +6,7 @@ const ControlsList = styled.ul`
     display: flex;
     align-content: center;
     justify-content: space-between;
+    width: 50%;
 
     & li{
         width: 120px;

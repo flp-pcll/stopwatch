@@ -4,7 +4,6 @@ import LapsData from "./LapsData";
 
 const Table = styled.table`
     text-align: center;
-    width: 100%
 `;
 
 
@@ -17,11 +16,11 @@ const TableHeader = styled.tr`
     }
 `;
 
-function LapsTable(props) {
-    // console.log(props.laps);
-    const laps = props.laps.map(lap => {
+function LapsTable({lapsList}) {
+    console.log('do laps para o lapsTable', lapsList)
+    const laps = lapsList.map((lap, index) => {
         return (
-            <LapsData key={lap.id} lapItem={lap}></LapsData>
+            <LapsData key={index} id={index} lapItem={lap}></LapsData>
         );
     })
 
