@@ -13,20 +13,20 @@ const ControlsList = styled.ul`
     }
 `;
 
-function Controls() {
+function Controls(props) {
     return(
         <ControlsList>
             <li>
-                <Button start type="button" name="start timer">Iniciar</Button>
+                <Button start type="button" name="start timer" onClick={props.onStart}>Iniciar</Button>
             </li>
             <li>
-                <Button pause type="button" name="pause timer">Parar</Button>
+                <Button pause type="button" name="pause timer" onClick={props.onPause}>Parar</Button>
             </li>
             <li>
-                <Button lap type="button" name="add lap">Volta</Button>
+                <Button lap type="button" name="add lap" onClick={props.onAddLap}>Volta</Button>
             </li>
             <li>
-                <Button reset type="button" name="reset timer">Restaurar</Button>
+                <Button reset type="button" name="reset timer" onClick={props.onReset}>Restaurar</Button>
             </li>
         </ControlsList>
     );
