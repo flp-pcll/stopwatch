@@ -7,6 +7,7 @@ const Button = styled.button`
     cursor: pointer;
     padding: .1rem .5rem;
     font-weight: 400;
+    vertical-align: bottom;
 
 
     background-color: ${props => props.start && '#444480'};

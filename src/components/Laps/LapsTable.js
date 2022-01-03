@@ -16,8 +16,8 @@ const TableHeader = styled.tr`
     }
 `;
 
-function LapsTable({lapsList}) {
-    console.log('do laps para o lapsTable', lapsList)
+function LapsTable({lapsList, lastLap}) {
+
     const laps = lapsList.map((lap, index) => {
         return (
             <LapsData key={index} id={index} lapItem={lap}></LapsData>
