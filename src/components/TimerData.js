@@ -11,6 +11,7 @@ const TimerData = styled.main`
     align-items: center;
     justify-content: center;
     width: 600px;
+    margin: auto;
 `;
 
 

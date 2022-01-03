@@ -4,12 +4,21 @@ import LapsData from "./LapsData";
 
 const Table = styled.table`
     text-align: center;
-    width: 100%;
+    width: 500px;
+    
+    & thead {
+        width: 100%
+    }
+
+    & tbody {
+        background-color: magenta;
+        background-color: #141414;
+    }
 `;
 
 
 const TableHeader = styled.tr`
-    border: 5px solid #fff;
+    border: none;
     
     & th {
         font-weight: 800;

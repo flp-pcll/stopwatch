@@ -16,9 +16,7 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 100;
     }
 
-    #root {
-        min-height: 100vh;
-    }
+
 
     input, button {
         outline: none;
