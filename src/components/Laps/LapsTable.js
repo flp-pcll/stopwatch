@@ -16,9 +16,12 @@ const TableHeader = styled.tr`
     }
 `;
 
-function LapsTable({lapsList, lastLap}) {
+function LapsTable(props) {
 
-    const laps = lapsList.map((lap, index) => {
+    console.log('agora no lapsTable',props.lapsList)
+
+    const laps = props.lapsList.map((lap, index) => {
+        console.log(lap)
         return (
             <LapsData key={index} id={index} lapItem={lap}></LapsData>
         );

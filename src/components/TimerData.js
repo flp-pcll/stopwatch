@@ -55,7 +55,8 @@ function timerReducer(state, action) {
         case "SET_SECONDS": return { ...state, timer: { ...state.timer, seconds: action.payload.seconds } };
         case "SET_MINUTES": return { ...state, timer: { ...state.timer, minutes: action.payload.minutes } };
         case "ADD_LAP" :
-            let newLap = {lapTotalTime: null, timerTotalTime: action.payload.currentTimer};
+            let anteriorLap = state.laps.length >= 1 ? state.laps[state.laps.length-1].timerTotalTime : {centiseconds: 0, seconds: 0, minutes: 0};
+            let newLap = {lapStartime: anteriorLap, timerTotalTime: action.payload.currentTimer};
             const newArray = [...state.laps, newLap];
             return {...state, laps: newArray};
         ;

@@ -8,6 +8,7 @@ const Section = styled.section`
 `;
 
 function Laps({lapsList}) {
+    // console.log('Laps:', lapsList)
     return(
         <Section>
             <LapsTable lapsList={lapsList}></LapsTable>
