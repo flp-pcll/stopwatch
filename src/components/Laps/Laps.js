@@ -3,15 +3,15 @@ import LapsTable from "./LapsTable";
 import styled from "styled-components";
 
 const Section = styled.section`
-    height: 50vh;
-    overflow: auto;
+    margin: 0 0 2.5rem 0;
+    min-height: 50vh;
+    width: 500px;
 `;
 
 function Laps({lapsList}) {
-    // console.log('Laps:', lapsList)
     return(
         <Section>
-            <LapsTable lapsList={lapsList}></LapsTable>
+            {lapsList.length > 0 && <LapsTable lapsList={lapsList}></LapsTable>}
         </Section>
     );
 };

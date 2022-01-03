@@ -14,8 +14,10 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.5;
         font-size: 18px;
         font-weight: 100;
+    }
 
-        height: 100vh;
+    #root {
+        min-height: 100vh;
     }
 
     input, button {

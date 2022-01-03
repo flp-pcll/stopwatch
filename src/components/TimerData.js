@@ -8,9 +8,9 @@ const TimerData = styled.main`
     display: flex;
     flex-direction: column;
     align-content: center;
-    align-items: center;   
-    justify-content: center; 
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
 `;
 
 
@@ -111,7 +111,7 @@ function TimerDataControl() {
     return (
         <TimerData>
             <StopWatch timer={timer} />
-                <Laps lapsList={laps} />
+            <Laps lapsList={laps} />
             <Controls onStart={startCountingHandle} onPause={pauseCountingHandle} onReset={resetCountingHandle} onAddLap={addLapHandler} />
         </TimerData>
     );

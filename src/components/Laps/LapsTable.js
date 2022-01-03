@@ -4,6 +4,7 @@ import LapsData from "./LapsData";
 
 const Table = styled.table`
     text-align: center;
+    width: 100%;
 `;
 
 
@@ -18,10 +19,7 @@ const TableHeader = styled.tr`
 
 function LapsTable(props) {
 
-    console.log('agora no lapsTable',props.lapsList)
-
     const laps = props.lapsList.map((lap, index) => {
-        console.log(lap)
         return (
             <LapsData key={index} id={index} lapItem={lap}></LapsData>
         );

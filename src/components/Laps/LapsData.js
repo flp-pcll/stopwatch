@@ -6,8 +6,6 @@ const LapsRow = styled.tr`
 
 
 function LapsData(props) {
-    console.log(props.lapItem);
-
     const {lapStartime, timerTotalTime} = props.lapItem;
 
     const lapResults = {
@@ -15,8 +13,6 @@ function LapsData(props) {
         seconds: timerTotalTime.seconds - lapStartime.seconds,
         centiseconds: timerTotalTime.centiseconds > lapStartime.centiseconds ? timerTotalTime.centiseconds - lapStartime.centiseconds : lapStartime.centiseconds - timerTotalTime.centiseconds
     };
-
-    console.log('pela ultima vez:', lapResults)
 
     return(
         <LapsRow id={props.id}>

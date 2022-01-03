@@ -3,10 +3,14 @@ import styled from "styled-components";
 
 const TimerContainer = styled.div`
     font-size: 6rem;
-    display: flex;
-    align-content: flex-start;
-    align-items: flex-start;
-    vertical-align: top;
+    vertical-align: bottom;
+    display: inline;
+
+    & span {
+        vertical-align: bottom;
+        height: 100%;
+        display: inline-block;
+    }
 `;
 
 function StopWatch(props) {

@@ -5,7 +5,8 @@ import styled from "styled-components";
 const ControlsList = styled.ul`
     display: flex;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
 
     & li{
         width: 120px;
