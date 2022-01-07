@@ -17,11 +17,12 @@ const TableHead = styled.thead`
     background-color: #000;
     height: 40px;
     border-collapse: collapse;
+    color: #efefef;
 
     & th {
         position: sticky;
         top: 0;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #efefef;
     }
 `;
 
