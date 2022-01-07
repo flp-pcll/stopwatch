@@ -2,6 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 const LapsRow = styled.tr`
+    border-top: .5px solid white;
+
+    td {
+        line-height: 2;
+
+        & span {
+            vertical-align: middle;
+        }
+    }
+
+
 `;
 
 

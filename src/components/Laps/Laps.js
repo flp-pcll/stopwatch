@@ -1,19 +1,21 @@
 import React from "react";
 import LapsTable from "./LapsTable";
+import Card from "../UI/Card";
 import styled from "styled-components";
 
 const Section = styled.section`
-    margin: 0 0 2.5rem 0;
-    height: 50vh;
-    width: 500px; 
-    overflow-y: auto;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
 `;
 
-function Laps({lapsList}) {
-    return(
-        <Section>
-            {lapsList.length > 0 && <LapsTable lapsList={lapsList}></LapsTable>}
-        </Section>
+function Laps({ lapsList }) {
+    return (
+        <Card>
+            <Section>
+                {lapsList.length > 0 && <LapsTable lapsList={lapsList}></LapsTable>}
+            </Section>
+        </Card>
     );
 };
 

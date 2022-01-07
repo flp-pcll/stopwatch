@@ -5,40 +5,27 @@ import LapsData from "./LapsData";
 const Table = styled.table`
     width: 100%;
     text-align: center;
-
 `;
 
 const TableHeader = styled.tr`
-    position: relative;
-    border: 1px solid white;
-
-     & :before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: orange;
-        z-index: 3000;
-    }
-
+    vertical-align: middle;
 `;
 
 const TableHead = styled.thead`
     position: sticky;
     top: 0;
     background-color: #000;
+    height: 40px;
 
     & th {
         position: sticky;
         top: 0;
-        border-bottom: 1px solid white;
     }
 
 `;
 
 const TableBody = styled.tbody`
-
+    background-color: #1d1d1d;
 `;
 
 function LapsTable(props) {
