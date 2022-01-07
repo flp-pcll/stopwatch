@@ -16,16 +16,16 @@ const TableHead = styled.thead`
     top: 0;
     background-color: #000;
     height: 40px;
+    border-collapse: collapse;
 
     & th {
         position: sticky;
         top: 0;
+        border-bottom: 1px solid white;
     }
-
 `;
 
 const TableBody = styled.tbody`
-    background-color: #1d1d1d;
 `;
 
 function LapsTable(props) {

@@ -4,9 +4,8 @@ import styled from "styled-components";
 
 const ControlsList = styled.ul`
     display: flex;
-    align-content: center;
     justify-content: space-around;
-    width: 100%;
+    margin: 1rem 0 2rem 0;
 
     & li{
         width: 120px;

@@ -7,6 +7,7 @@ const Section = styled.section`
     width: 100%; 
     height: 100%;
     overflow: auto;
+    scrollbar-color: #5d5d5d black;
 `;
 
 function Laps({ lapsList }) {

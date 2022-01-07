@@ -10,8 +10,8 @@ const Button = styled.button`
     vertical-align: bottom;
 
 
-    background-color: ${props => props.start && '#444480'};
-    background-color: ${props => (props.lap || props.pause) && '#2f2f2f'};
+    background-color: ${props => props.start && 'rgba(68, 68, 128, .4)'};
+    background-color: ${props => (props.lap || props.pause) && 'rgba(47, 47, 47, .8)'};
     background-color: ${props => props.reset && '#592730'};
 `;
 
